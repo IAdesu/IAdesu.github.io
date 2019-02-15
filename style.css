@@ -211,7 +211,6 @@ nav li {
   padding:0px 20px;
   margin-top: 0px;
   z-index: -2;
-  min-width:550px;
 }
 
 .footer-logo{
@@ -285,4 +284,8 @@ h2:not([class="sub-name"]) {
   border-radius:10px;
   font-size:0.7em;
   float:;
+}
+
+.footer_intro{
+  min-width:550px;
 }
