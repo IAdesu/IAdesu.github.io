@@ -11,56 +11,55 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
-
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="header">
-          <div class="header-logo">IKEOeki</div>
-          <div class="header-list">
-          <ul class="hidden-xs">
-            <li><a href="自己紹介.html">自己紹介</a></li>
-            <li><a href="大学での制作物.html">大学での制作物</a></li>
-            <li><a href="form.html">質問</a></li>
-          </ul>
-          </div>
+    <div class="row">
+      <div class="header">
+        <div class="header-logo">IKEOeki</div>
+        <div class="header-list">
+        <ul class="hidden-xs">
+          <li><a href="index.html">C言語講座</a></li>
+          <li><a href="大学での制作物.html">大学での制作物</a></li>
+          <li><a href="form.html">質問</a></li>
+        </ul>
         </div>
       </div>
-      <div class="visible-xs overlay"></div>
-
-      <div class="visible-xs menu-trigger" href="">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="visible-xs">
-        <ul>
-          <li><a href="自己紹介.html">自己紹介</a></li>
-          <li><a href="大学での制作物.html">大学での制作物</a></li>
-          <li>質問</li>
-        </ul>
-      </nav>
-      <h2>問い合わせ内容</h2>
-        <form action="mailto.php" method="post">
-          <table border="1">
-            <tr>
-              <td>名前</td>
-              <td><?php echo $_POST["name"]; ?></td>
-            </tr>
-            <tr>
-              <td>メールアドレス</td>
-              <td><?php echo $_POST["mail"]; ?></td>
-            </tr>
-            <tr>
-              <td>問い合わせ内容</td>
-              <td><?php echo $_POST["inquiry"]; ?></td>
-            </tr>
-          </table>
-          <input type="submit" value="送信" />
-        </form>
     </div>
 
-    <div class="footer">
+    <div class="visible-xs overlay"></div>
+
+    <div class="visible-xs menu-trigger" href="">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="visible-xs">
+      <ul>
+        <li><a href="index.html">C言語講座</a></li>
+        <li><a href="大学での制作物.html">大学での制作物</a></li>
+        <li>質問</li>
+      </ul>
+    </nav>
+
+    <h2>問い合わせ内容</h2>
+      <form action="mailto.php" method="post">
+        <table border="1">
+          <tr>
+            <td>名前</td>
+            <td><?php echo $_POST["name"]; ?></td>
+          </tr>
+          <tr>
+            <td>メールアドレス</td>
+            <td><?php echo $_POST["mail"]; ?></td>
+          </tr>
+          <tr>
+            <td>問い合わせ内容</td>
+            <td><?php echo $_POST["inquiry"]; ?></td>
+          </tr>
+        </table>
+        <input type="submit" value="送信" />
+      </form>
+
+    <div class="footer footer_intro">
       <!--<div class="footer-logo">IA's C</div>-->
       <div class="footer-list">
         <ul>
@@ -75,6 +74,4 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="menu.js"></script>
-    </div>
   </body>
-</html>
