@@ -1,5 +1,5 @@
 <?php header("Content-Type:text/html;charset=utf-8"); ?>
-<?php //error_reporting(E_ALL | E_STRICT);
+<?php error_reporting(E_ALL | E_STRICT);
 ##-----------------------------------------------------------------------------------------------------------------##
 #
 #  PHPメールプログラム　フリー版 最終更新日2018/07/27
