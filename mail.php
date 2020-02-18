@@ -1,4 +1,3 @@
-
 <?php header("Content-Type:text/html;charset=utf-8"); ?>
 <?php //error_reporting(E_ALL | E_STRICT);
 ##-----------------------------------------------------------------------------------------------------------------##
@@ -88,7 +87,7 @@ $jumpPage = 0;
 $thanksPage = "http://xxx.xxxxxxxxx/thanks.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
-$requireCheck = 1;
+$requireCheck = 0;
 
 /* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
 値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。
@@ -157,7 +156,7 @@ $hankaku = 0;
 //全角英数字→半角変換を行う項目のname属性の値（name="○○"の「○○」部分）
 //※複数の場合にはカンマで区切って下さい。（上記で「1」を指定した場合のみ有効）
 //配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。
-//$hankaku_array = array('電話番号','金額');
+$hankaku_array = array('電話番号','金額');
 
 //-fオプションによるエンベロープFrom（Return-Path）の設定(する=1, しない=0)　
 //※宛先不明（間違いなどで存在しないアドレス）の場合に 管理者宛に「Mail Delivery System」から「Undelivered Mail Returned to Sender」というメールが届きます。
